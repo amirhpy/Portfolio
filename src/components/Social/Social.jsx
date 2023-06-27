@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 
 // img
 import line from '../../assets/svg/line.svg'
@@ -12,9 +13,15 @@ const Social = () => {
             <div className='flex flex-col items-center'>
                 <img src={line} alt='line' />
                 <div className='flex flex-col items-center mt-2'>
-                    <img src={gitHub} alt='github' />
-                    <img src={twitter} alt='twitter' className='my-2' />
-                    <img src={linkedin} alt='linkedin' />
+                    <Link to='https://github.com/amirhpy/' target='_blank' className='group'>
+                        <img src={gitHub} alt='github' className=' group-hover:fill-white' />
+                    </Link>
+                    <Link to='/' target='_blank' className='group'>
+                        <img src={twitter} alt='twitter' className='my-2 group-hover:fill-white' />
+                    </Link>
+                    <Link to='https://www.linkedin.com/in/amirhosseinpour/' target='_blank' className='group'>
+                        <img src={linkedin} alt='linkedin' className=' group-hover:fill-white' />
+                    </Link>
                 </div>
             </div>
         </div>
