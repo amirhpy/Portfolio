@@ -17,7 +17,7 @@ const Menu = () => {
     return (
         <>
             <Social />
-            <nav className='w-10/12 mx-auto flex py-8 items-center justify-between'>
+            <nav className='container flex py-8 items-center justify-between'>
                 <div className='flex font-fira-700 items-center z-10 text-white'>
                     <img className='mr-3' src={logo} alt='logo' />
                     amir
@@ -35,11 +35,14 @@ const Menu = () => {
                         <span className='text-primary'>#</span>
                         about-me
                     </li>
-                    <li className='mt-4 md:mt-0'>
+                    <li className='mr-8 mt-4 md:mt-0'>
                         <span className='text-primary'>#</span>
                         contacts
                     </li>
-
+                    <li className='mt-4 md:mt-0'>
+                        <span className='text-primary'>#</span>
+                        EN
+                    </li>
                     <div className='self-center absolute bottom-10 md:hidden'>
                         <div className='flex items-center'>
                             <img src={gitHub} alt='github' />
