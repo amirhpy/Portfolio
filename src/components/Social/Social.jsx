@@ -9,7 +9,7 @@ import twitter from '../../assets/svg/Twitter.svg'
 
 const Social = () => {
     return (
-        <div className='absolute left-5 lg:left-10 top-0 hidden md:block'>
+        <div className='absolute left-5 xl:left-10 top-0 hidden md:block'>
             <div className='flex flex-col items-center'>
                 <img src={line} alt='line' />
                 <div className='flex flex-col items-center mt-2'>

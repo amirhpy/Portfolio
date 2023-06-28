@@ -13,9 +13,19 @@ export default {
     },
     container: {
       center: true,
-      padding: '1rem'
+      padding: {
+        DEFAULT: '1rem',
+        sm: '2rem',
+        md: '4rem',
+        lg: '4rem',
+        xl: '5rem'
+      }
     },
     screens: {
+      // 'sm': '576px',
+      // 'md': '768px',
+      // 'lg': '992px',
+      // 'xl': '1024px',
       'sm': '640px',
       'md': '768px',
       'lg': '1024px',
