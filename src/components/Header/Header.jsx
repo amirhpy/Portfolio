@@ -12,7 +12,7 @@ const Header = () => {
             <div className='flex items-center flex-wrap justify-center h-[calc(100vh-88px)]'>
                 <div className='w-full md:w-1/2'>
                     <div className='text-start'>
-                        <h1 className='font-fira-600 text-3xl text-white'>amir is a <span className='text-primary'>front-end developer</span></h1>
+                        <h1 className='font-fira-600 text-3xl text-white'>amirhossein is a <span className='text-primary'>front-end developer</span></h1>
                         <p className='leading-6 mt-8 mb-6'>He crafts responsive websites where technologies <br /> meet creativity</p>
                         <div className='hidden md:flex'><Button name='Contact me!!' /></div>
                     </div>
