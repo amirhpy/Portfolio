@@ -4,6 +4,7 @@ import React from 'react';
 import Menu from './components/Menu/Menu';
 import Header from './components/Header/Header';
 import Quote from './components/Quote/Quote';
+import Projects from './components/Projects/Projects';
 
 const App = () => {
     return (
@@ -11,6 +12,7 @@ const App = () => {
             <Menu />
             <Header />
             <Quote />
+            <Projects />
         </div>
     );
 };
