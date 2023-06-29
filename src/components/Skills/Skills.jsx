@@ -20,7 +20,7 @@ const Skills = () => {
     return (
         <div className='container mt-28'>
             <div className='mb-12'>
-                <HeadComponent nameComponent='Skills' lineHidden='hidden' hidden='hidden' />
+                <HeadComponent nameComponent='skills' lineHidden='hidden' hidden='hidden' />
             </div>
             <div className='flex items-center flex-wrap'>
                 <div className='w-full md:w-2/5'>
