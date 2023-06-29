@@ -7,6 +7,7 @@ import HeadComponent from '../shared/HeadComponent/HeadComponent';
 import aboutImg from '../../assets/img/aboutimg.png'
 import rectangleGross from '../../assets/svg/RectangleGross.svg';
 import dots from '../../assets/svg/dots.svg'
+import Button from '../shared/Button/Button';
 
 const About = () => {
     return (
@@ -25,11 +26,12 @@ const About = () => {
                             I can develop responsive websites from scratch and raise them
                             into modern user-friendly web experiences.
                         </p>
-                        <p>
+                        <p className='mb-9'>
                             Transforming my creativity and knowledge into a websites has been my passion for over a year.
                             I have been helping various clients to establish their presence online.
                             I always strive to learn about the newest technologies and frameworks.
                         </p>
+                        <Button name='Read more ->' />
                     </div>
                     <div className='w-full md:w-2/5 flex justify-center md:justify-end'>
                         <img src={aboutImg} alt='img' className='' />
