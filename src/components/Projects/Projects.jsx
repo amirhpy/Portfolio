@@ -24,7 +24,7 @@ const Projects = () => {
                 <div className='mb-12'>
                     <HeadComponent nameComponent='project' lineHidden='w-36 lg:w-96' />
                 </div>
-                <div className='flex flex-wrap justify-evenly xl:justify-between'>
+                <div className='flex flex-wrap justify-evenly xl:justify-between gap-4'>
                     {projects.map(project => (
                         <MainProject key={project.id} {...project} />
                     ))}

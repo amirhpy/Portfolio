@@ -19,7 +19,7 @@ const Menu = () => {
                 <div className='container flex py-8 items-center justify-between'>
                     <div className='flex font-fira-700 items-center z-10 text-white'>
                         <img className='mr-3' src={logo} alt='logo' />
-                        amir
+                        amirhossein
                     </div>
                     <ul className={`flex flex-col md:flex-row md:items-center py-20 px-10 md:px-0 md:py-0 h-screen md:h-auto absolute md:static left-0 w-full md:w-auto transition-all duration-500 ease-in-out bg-background md:bg-transparent ${menuOpen ? 'top-0' : 'top-[-900px]'}`}>
                         <NavLink to='/' className={(link) => link.isActive ? 'text-white font-fira-500' : ''}>

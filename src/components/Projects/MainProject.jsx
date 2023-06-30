@@ -5,7 +5,7 @@ import Button from '../shared/Button/Button';
 
 const MainProject = ({ img, using, nameProject, desc }) => {
     return (
-        <div className='flex flex-col w-full lg:w-auto border border-gray even:mt-12 last:mt-12 lg:even:mt-0 xl:last:mt-0 '>
+        <div className='flex flex-col w-full lg:w-auto border border-gray'>
             <div>
                 <img src={img} alt='project' className='w-full lg:w-auto' />
             </div>
