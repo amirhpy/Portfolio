@@ -12,7 +12,7 @@ import projectIMG from '../../assets/img/projectimg.jpg'
 import SmallProject from './SmallProject';
 import rectangleGross from '../../assets/svg/RectangleGross.svg';
 
-const Projects = () => {
+const ProjectsPage = () => {
     const projects = [
         { id: 1, img: projectIMG, using: 'HTML CSS Javasctipt', nameProject: 'Form', desc: 'Form' },
         { id: 2, img: projectIMG, using: 'HTML', nameProject: 'We', desc: 'Form' },
@@ -57,4 +57,4 @@ const Projects = () => {
     );
 };
 
-export default Projects;
+export default ProjectsPage;

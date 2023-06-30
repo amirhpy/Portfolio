@@ -1,14 +1,14 @@
 import Home from "./pages/Home/Home";
-import Projects from "./pages/Projects/Projects";
-import About from "./pages/About/About"
-import Contacts from "./pages/Contacts/Contacts"
+import ProjectsPage from "./pages/Projects/ProjectsPage";
+import AboutPage from "./pages/About/AboutPage"
+import ContactsPage from "./pages/Contacts/ContactsPage"
 import NotFound from "./components/NotFound/NotFound";
 
 let routes = [
     { path: '/', element: <Home /> },
-    {path: '/projects', element: <Projects />},
-    {path: '/about', element: <About />},
-    {path: '/contacts', element: <Contacts />},
+    {path: '/projects', element: <ProjectsPage />},
+    {path: '/about', element: <AboutPage />},
+    {path: '/contacts', element: <ContactsPage />},
     {path: '*', element: <NotFound />}
 ]
 
