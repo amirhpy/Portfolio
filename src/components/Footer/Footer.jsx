@@ -1,11 +1,8 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 // img
 import email from '../../assets/svg/Email.svg'
-import gitHub from '../../assets/svg/Github.svg'
-import linkedin from '../../assets/svg/Linkedin.svg'
-import twitter from '../../assets/svg/Twitter.svg'
+import MainSocial from '../shared/Social/MainSocial';
 
 const Footer = () => {
     return (
@@ -22,17 +19,7 @@ const Footer = () => {
                     </div>
                     <div className='flex flex-col items-center'>
                         <h4 className='text-2xl font-fira-500 text-white'>Media</h4>
-                        <div className='flex items-center mt-2'>
-                            <Link to='https://github.com/amirhpy/' target='_blank' className='group'>
-                                <img src={gitHub} alt='github' className=' group-hover:fill-white' />
-                            </Link>
-                            <Link to='/' target='_blank' className='group mx-2'>
-                                <img src={twitter} alt='twitter' className='group-hover:fill-white' />
-                            </Link>
-                            <Link to='https://www.linkedin.com/in/amirhosseinpour/' target='_blank' className='group'>
-                                <img src={linkedin} alt='linkedin' className=' group-hover:fill-white' />
-                            </Link>
-                        </div>
+                        <MainSocial rowCol='flex-row mt-1' spaceBettwen='mx-2' />
                     </div>
                 </div>
                 <p className='text-center pb-8 pt-12'>Made by amirhossein ❤️</p>

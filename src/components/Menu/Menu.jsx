@@ -5,12 +5,9 @@ import logo from '../../assets/svg/logo.svg'
 import open from '../../assets/svg/open.svg'
 import close from '../../assets/svg/close.svg'
 
-import gitHub from '../../assets/svg/Github.svg'
-import linkedin from '../../assets/svg/Linkedin.svg'
-import twitter from '../../assets/svg/Twitter.svg'
-
 // component
-import Social from '../Social/Social';
+import Social from '../shared/Social/Social';
+import MainSocial from '../shared/Social/MainSocial';
 
 const Menu = () => {
     const [menuOpen, setMenuOpen] = useState(false)
@@ -44,11 +41,7 @@ const Menu = () => {
                         EN
                     </li>
                     <div className='self-center absolute bottom-10 md:hidden'>
-                        <div className='flex items-center'>
-                            <img src={gitHub} alt='github' />
-                            <img src={twitter} alt='twitter' className='my-2' />
-                            <img src={linkedin} alt='linkedin' />
-                        </div>
+                        <MainSocial rowCol='flex-row' spaceBettwen='mx-2' />
                     </div>
                 </ul>
                 <div className='md:hidden z-10'>
