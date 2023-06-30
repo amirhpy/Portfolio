@@ -7,7 +7,7 @@ import MainProject from './MainProject';
 // img
 import projectIMG from '../../assets/img/projectimg.jpg'
 import rectangleGross from '../../assets/svg/RectangleGross.svg';
-import dots from '../../assets/svg/dots.svg'
+import dots from '../../assets/svg/Dots.svg'
 
 const Projects = () => {
     const [projects] = useState([

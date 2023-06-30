@@ -6,7 +6,7 @@ import HeadComponent from '../shared/HeadComponent/HeadComponent';
 // img
 import aboutImg from '../../assets/img/aboutimg.png'
 import rectangleGross from '../../assets/svg/RectangleGross.svg';
-import dots from '../../assets/svg/dots.svg'
+import dots from '../../assets/svg/Dots.svg'
 import Button from '../shared/Button/Button';
 
 const About = () => {
