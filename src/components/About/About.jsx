@@ -2,12 +2,12 @@ import React from 'react';
 
 // shared
 import HeadComponent from '../shared/HeadComponent/HeadComponent';
+import Button from '../shared/Button/Button';
 
 // img
 import aboutImg from '../../assets/img/aboutimg.png'
 import rectangleGross from '../../assets/svg/RectangleGross.svg';
 import dots from '../../assets/svg/Dots.svg'
-import Button from '../shared/Button/Button';
 
 const About = () => {
     return (
