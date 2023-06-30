@@ -11,7 +11,7 @@ import rectangleGross from '../../assets/svg/RectangleGross.svg';
 
 const About = () => {
     return (
-        <div className='relative mt-28'>
+        <section className='relative mt-28'>
             <img src={rectangleGross} alt='rectangle' className='absolute rotate-180 -left-5 top-28 hidden lg:block' />
             {/* <img src={dots} alt='dots' className='absolute right-0 bottom-28 hidden lg:block' /> */}
             <div className='container'>
@@ -38,7 +38,7 @@ const About = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 

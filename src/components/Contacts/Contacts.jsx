@@ -10,7 +10,7 @@ import discord from '../../assets/svg/Discord.svg'
 
 const Contacts = () => {
     return (
-        <div className='relative mt-28'>
+        <section className='relative mt-28'>
             {/* <img src={dots} alt='dots' className='absolute -left-10 top-16 hidden lg:block' /> */}
             <div className='container'>
                 <div className='mb-12'>
@@ -41,7 +41,7 @@ const Contacts = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 

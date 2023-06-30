@@ -18,7 +18,7 @@ const Skills = () => {
         { id: 5, headSkill: 'Frameworks', bodySkill: 'React Vue Disnake Discord Flast Express' }
     ])
     return (
-        <div className='container mt-28'>
+        <section className='container mt-28'>
             <div className='mb-12'>
                 <HeadComponent nameComponent='skills' lineHidden='w-52' hidden='hidden' />
             </div>
@@ -32,7 +32,7 @@ const Skills = () => {
                     ))}
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 

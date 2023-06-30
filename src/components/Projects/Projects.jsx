@@ -16,7 +16,7 @@ const Projects = () => {
         { id: 3, img: projectIMG, using: 'HTML Javasctipt', nameProject: 'Form', desc: 'Form' },
     ])
     return (
-        <div className='relative mt-28'>
+        <section className='relative mt-28'>
             {/* <img src={dots} alt='dots' className='absolute -left-12 top-16 hidden lg:block' /> */}
             <img src={rectangleGross} alt='rectangle' className='absolute right-0 bottom-16 hidden lg:block' />
             <div className='container'>
@@ -29,7 +29,7 @@ const Projects = () => {
                     ))}
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 
