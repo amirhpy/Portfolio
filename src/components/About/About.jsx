@@ -7,16 +7,16 @@ import Button from '../shared/Button/Button';
 // img
 import aboutImg from '../../assets/img/aboutimg.png'
 import rectangleGross from '../../assets/svg/RectangleGross.svg';
-import dots from '../../assets/svg/dots.svg'
+// import dots from '../../assets/svg/dots.svg'
 
 const About = () => {
     return (
         <div className='relative mt-28'>
             <img src={rectangleGross} alt='rectangle' className='absolute rotate-180 -left-5 top-28 hidden lg:block' />
-            <img src={dots} alt='dots' className='absolute right-0 bottom-28 hidden lg:block' />
+            {/* <img src={dots} alt='dots' className='absolute right-0 bottom-28 hidden lg:block' /> */}
             <div className='container'>
                 <div className='mb-12'>
-                    <HeadComponent nameComponent='about-me' lineHidden='hidden' hidden='hidden' />
+                    <HeadComponent nameComponent='about-me' lineHidden='w-80' hidden='hidden' />
                 </div>
                 <div className='flex flex-wrap'>
                     <div className='w-full md:w-3/5'>
