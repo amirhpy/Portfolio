@@ -6,7 +6,7 @@ import HeadComponent from '../shared/HeadComponent/HeadComponent';
 // icon
 import telegram from '../../assets/svg/Telegram.svg'
 import discord from '../../assets/svg/Discord.svg'
-import dots from '../../assets/svg/Dots.svg'
+import dots from '../../assets/svg/dots.svg'
 
 const Contacts = () => {
     return (

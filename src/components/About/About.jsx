@@ -7,7 +7,7 @@ import Button from '../shared/Button/Button';
 // img
 import aboutImg from '../../assets/img/aboutimg.png'
 import rectangleGross from '../../assets/svg/RectangleGross.svg';
-import dots from '../../assets/svg/Dots.svg'
+import dots from '../../assets/svg/dots.svg'
 
 const About = () => {
     return (
