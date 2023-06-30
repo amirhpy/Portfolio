@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 // components
 import MainSkill from './MainSkill';
@@ -10,13 +10,13 @@ import HeadComponent from '../shared/HeadComponent/HeadComponent';
 import groupIcon from '../../assets/svg/groupicon.svg'
 
 const Skills = () => {
-    const [skills] = useState([
-        { id: 1, headSkill: 'Languages', bodySkill: 'TypeScript lua Python Javascript' },
-        { id: 2, headSkill: 'Databases', bodySkill: 'SQLite PostgreSQL Mongo' },
+    const skills = [
+        { id: 1, headSkill: 'Databases', bodySkill: 'SQLite PostgreSQL Mongo' },
+        { id: 2, headSkill: 'Languages', bodySkill: 'TypeScript lua Python Javascript' },
         { id: 3, headSkill: 'Tools', bodySkill: 'VSCode Neovim Linux Git Front Awesome Gitlab Photoshop' },
         { id: 4, headSkill: 'Other', bodySkill: 'HTML CSS EJS SCSS Rest Jinja' },
         { id: 5, headSkill: 'Frameworks', bodySkill: 'React Vue Disnake Discord Flast Express' }
-    ])
+    ]
     return (
         <section className='container mt-28'>
             <div className='mb-12'>

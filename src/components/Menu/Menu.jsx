@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { NavLink } from 'react-router-dom';
 
 // logo
 import logo from '../../assets/svg/logo.svg'
@@ -14,38 +15,48 @@ const Menu = () => {
     return (
         <>
             <Social />
-            <nav className='container flex py-8 items-center justify-between'>
-                <div className='flex font-fira-700 items-center z-10 text-white'>
-                    <img className='mr-3' src={logo} alt='logo' />
-                    amir
-                </div>
-                <ul className={`flex flex-col md:flex-row md:items-center py-20 px-10 md:px-0 md:py-0 h-screen md:h-auto absolute md:static left-0 w-full md:w-auto transition-all duration-500 ease-in-out bg-background md:bg-transparent ${menuOpen ? 'top-0' : 'top-[-900px]'}`}>
-                    <li className='text-white font-fira-500 mr-8'>
-                        <span className='text-primary'>#</span>
-                        home
-                    </li>
-                    <li className='mr-8 mt-4 md:mt-0'>
-                        <span className='text-primary'>#</span>
-                        works
-                    </li>
-                    <li className='mr-8 mt-4 md:mt-0'>
-                        <span className='text-primary'>#</span>
-                        about-me
-                    </li>
-                    <li className='mr-8 mt-4 md:mt-0'>
-                        <span className='text-primary'>#</span>
-                        contacts
-                    </li>
-                    <li className='mt-4 md:mt-0'>
-                        <span className='text-primary'>#</span>
-                        EN
-                    </li>
-                    <div className='self-center absolute bottom-10 md:hidden'>
-                        <MainSocial rowCol='flex-row' spaceBettwen='mx-2' />
+            <nav className='sticky top-0 z-10 bg-background'>
+                <div className='container flex py-8 items-center justify-between'>
+                    <div className='flex font-fira-700 items-center z-10 text-white'>
+                        <img className='mr-3' src={logo} alt='logo' />
+                        amir
                     </div>
-                </ul>
-                <div className='md:hidden z-10'>
-                    <img className='cursor-pointer' onClick={() => setMenuOpen(!menuOpen)} src={menuOpen ? `${close}` : `${open}`} alt='menu' />
+                    <ul className={`flex flex-col md:flex-row md:items-center py-20 px-10 md:px-0 md:py-0 h-screen md:h-auto absolute md:static left-0 w-full md:w-auto transition-all duration-500 ease-in-out bg-background md:bg-transparent ${menuOpen ? 'top-0' : 'top-[-900px]'}`}>
+                        <NavLink to='/' className={(link) => link.isActive ? 'text-white font-fira-500' : ''}>
+                            <li className='mr-8 hover:text-white transition-all'>
+                                <span className='text-primary'>#</span>
+                                home
+                            </li>
+                        </NavLink>
+                        <NavLink to='/projects' className={(link) => link.isActive ? 'text-white font-fira-500' : ''}>
+                            <li className='mr-8 mt-4 md:mt-0 hover:text-white transition-all'>
+                                <span className='text-primary'>#</span>
+                                projects
+                            </li>
+                        </NavLink>
+                        <NavLink to='/about' className={(link) => link.isActive ? 'text-white font-fira-500' : ''}>
+                            <li className='mr-8 mt-4 md:mt-0 hover:text-white transition-all'>
+                                <span className='text-primary'>#</span>
+                                about-me
+                            </li>
+                        </NavLink>
+                        <NavLink to='/contacts' className={(link) => link.isActive ? 'text-white font-fira-500' : ''}>
+                            <li className='mr-8 mt-4 md:mt-0 hover:text-white transition-all'>
+                                <span className='text-primary'>#</span>
+                                contacts
+                            </li>
+                        </NavLink>
+                        <li className='mt-4 md:mt-0 hover:text-white transition-all'>
+                            <span className='text-primary'>#</span>
+                            EN
+                        </li>
+                        <div className='self-center absolute bottom-10 md:hidden'>
+                            <MainSocial rowCol='flex-row' spaceBettwen='mx-2' />
+                        </div>
+                    </ul>
+                    <div className='md:hidden z-10'>
+                        <img className='cursor-pointer' onClick={() => setMenuOpen(!menuOpen)} src={menuOpen ? `${close}` : `${open}`} alt='menu' />
+                    </div>
                 </div>
             </nav>
         </>

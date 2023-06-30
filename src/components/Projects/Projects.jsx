@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 // shared
 import HeadComponent from '../shared/HeadComponent/HeadComponent';
@@ -10,11 +10,12 @@ import rectangleGross from '../../assets/svg/RectangleGross.svg';
 // import dots from '../../assets/svg/dots.svg'
 
 const Projects = () => {
-    const [projects] = useState([
+    const projects = [
         { id: 1, img: projectIMG, using: 'HTML CSS Javasctipt', nameProject: 'Form', desc: 'Form' },
         { id: 2, img: projectIMG, using: 'HTML', nameProject: 'We', desc: 'Form' },
         { id: 3, img: projectIMG, using: 'HTML Javasctipt', nameProject: 'Form', desc: 'Form' },
-    ])
+    ]
+
     return (
         <section className='relative mt-28'>
             {/* <img src={dots} alt='dots' className='absolute -left-12 top-16 hidden lg:block' /> */}

@@ -8,7 +8,7 @@ import MainSocial from './MainSocial';
 
 const Social = () => {
     return (
-        <div className='absolute left-5 xl:left-10 top-0 hidden md:block'>
+        <div className='absolute left-5 xl:left-10 top-0 hidden md:block z-20'>
             <div className='flex flex-col items-center'>
                 <img src={line} alt='line' />
                 <MainSocial rowCol='flex-col mt-2' spaceBettwen='my-2' />
