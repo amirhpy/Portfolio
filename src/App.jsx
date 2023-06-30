@@ -7,6 +7,7 @@ import Footer from './components/Footer/Footer';
 
 // route
 import routes from './routes';
+import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 
 const App = () => {
     let router = useRoutes(routes)
@@ -16,6 +17,7 @@ const App = () => {
             <Menu />
             {router}
             <Footer />
+            <ScrollToTop />
         </div>
     );
 };
