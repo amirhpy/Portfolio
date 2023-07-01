@@ -6,12 +6,12 @@ import HeadComponent from '../shared/HeadComponent/HeadComponent';
 // icon
 import telegram from '../../assets/svg/Telegram.svg'
 import discord from '../../assets/svg/Discord.svg'
-// import dots from '../../assets/svg/dots.svg'
+import dots from '../../assets/img/dots.png'
 
 const Contacts = () => {
     return (
         <section className='relative mt-28'>
-            {/* <img src={dots} alt='dots' className='absolute -left-10 top-16 hidden lg:block' /> */}
+            <img src={dots} alt='dots' className='absolute -left-10 top-16 hidden lg:block' />
             <div className='container'>
                 <div className='mb-12'>
                     <HeadComponent nameComponent='contacts' lineHidden='w-36' hidden='hidden' />

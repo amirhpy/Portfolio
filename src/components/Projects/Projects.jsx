@@ -7,7 +7,7 @@ import MainProject from './MainProject';
 // img
 import projectIMG from '../../assets/img/projectimg.jpg'
 import rectangleGross from '../../assets/svg/RectangleGross.svg';
-// import dots from '../../assets/svg/dots.svg'
+import dots from '../../assets/img/dots.png'
 
 const Projects = () => {
     const projects = [
@@ -18,7 +18,7 @@ const Projects = () => {
 
     return (
         <section className='relative mt-28'>
-            {/* <img src={dots} alt='dots' className='absolute -left-12 top-16 hidden lg:block' /> */}
+            <img src={dots} alt='dots' className='absolute -left-12 top-16 hidden lg:block' />
             <img src={rectangleGross} alt='rectangle' className='absolute right-0 bottom-16 hidden lg:block' />
             <div className='container'>
                 <div className='mb-12'>
