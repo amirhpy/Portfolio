@@ -2,6 +2,7 @@ import React from 'react';
 
 // components
 import MainProject from '../../components/Projects/MainProject';
+import SmallProject from './SmallProject';
 
 // shared
 import HeadPage from '../../components/shared/HeadPage/HeadPage';
@@ -9,7 +10,6 @@ import HeadComponent from '../../components/shared/HeadComponent/HeadComponent';
 
 // img
 import projectIMG from '../../assets/img/projectimg.jpg'
-import SmallProject from './SmallProject';
 import rectangleGross from '../../assets/svg/RectangleGross.svg';
 import dots from '../../assets/img/dots.png'
 
@@ -39,7 +39,7 @@ const ProjectsPage = () => {
             <img src={dots} alt='dots' className='absolute -right-5 bottom-96 hidden lg:block' />
         
             <div className='container'>
-                <HeadPage />
+                <HeadPage pageName='projects' descPage='List of my projects' />
                 <div className='mb-12 mt-16'>
                     <HeadComponent nameComponent='complete-apps' lineHidden='hidden' hidden='hidden' />
                 </div>
@@ -51,7 +51,7 @@ const ProjectsPage = () => {
                 <div className='mb-12 mt-20'>
                     <HeadComponent nameComponent='small-projects' lineHidden='hidden' hidden='hidden' />
                 </div>
-                <div className='flex flex-wrap gap-1 items-start justify-between mb-40'>
+                <div className='flex flex-wrap gap-1 items-start justify-between'>
                     {skills.map(skill => (
                         <SmallProject key={skill.id} {...skill} />
                     ))}

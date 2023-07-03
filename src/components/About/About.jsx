@@ -18,7 +18,7 @@ const About = () => {
                 <div className='mb-12'>
                     <HeadComponent nameComponent='about-me' lineHidden='w-80' hidden='hidden' />
                 </div>
-                <div className='flex flex-wrap'>
+                <div className='flex flex-wrap items-center'>
                     <div className='w-full md:w-3/5'>
                         <p>Hello, i’m Elias!</p>
                         <p className='py-10'>
