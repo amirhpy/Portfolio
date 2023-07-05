@@ -7,11 +7,10 @@ import SmallProject from './SmallProject';
 // shared
 import HeadPage from '../../components/shared/HeadPage/HeadPage';
 import HeadComponent from '../../components/shared/HeadComponent/HeadComponent';
+import SideSvg from '../../components/shared/SideSvg/SideSvg';
 
 // img
 import projectIMG from '../../assets/img/projectimg.jpg'
-import rectangleGross from '../../assets/svg/RectangleGross.svg';
-import dots from '../../assets/img/dots.png'
 
 const ProjectsPage = () => {
     const projects = [
@@ -33,11 +32,7 @@ const ProjectsPage = () => {
 
     return (
         <section className='relative mt-12 overflow-hidden'>
-            <img src={dots} alt='dots' className='absolute -left-6 top-52 hidden lg:block' />
-            <img src={rectangleGross} alt='rectangle' className='absolute rotate-180 -left-5 bottom-36 hidden lg:block' />
-            <img src={rectangleGross} alt='rectangle' className='absolute right-0 top-28 hidden lg:block' />
-            <img src={dots} alt='dots' className='absolute -right-5 bottom-96 hidden lg:block' />
-        
+            <SideSvg />
             <div className='container'>
                 <HeadPage pageName='projects' descPage='List of my projects' />
                 <div className='mb-12 mt-16'>

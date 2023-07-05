@@ -2,7 +2,6 @@ import React from 'react';
 
 // shared
 import HeadPage from '../../components/shared/HeadPage/HeadPage';
-import HeadComponent from '../../components/shared/HeadComponent/HeadComponent';
 
 // icon
 import telegram from '../../assets/svg/Telegram.svg'

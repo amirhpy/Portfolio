@@ -10,14 +10,14 @@ const Footer = () => {
             <div className='w-full h-px bg-gray'></div>
             <div className='container'>
                 <div className='flex justify-between flex-wrap mt-8'>
-                    <div>
+                    <div className='mt-3 sm:mt-0'>
                         <p className='flex items-center'>
                             <img src={email} alt='email' className='mr-1' />
                             amirhosseinhphpam@gmail.com
                         </p>
                         <p className='text-white'>Front-end Developer</p>
                     </div>
-                    <div className='flex flex-col items-center'>
+                    <div className='flex flex-col mt-3 sm:mt-0 items-center'>
                         <h4 className='text-2xl font-fira-500 text-white'>Media</h4>
                         <MainSocial rowCol='flex-row mt-1' spaceBettwen='mx-2' />
                     </div>

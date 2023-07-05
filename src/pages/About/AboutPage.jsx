@@ -7,12 +7,11 @@ import SoftSkill from './SoftSkill';
 // shared
 import HeadPage from '../../components/shared/HeadPage/HeadPage';
 import HeadComponent from '../../components/shared/HeadComponent/HeadComponent'
+import SideSvg from '../../components/shared/SideSvg/SideSvg';
 
 // img
 import aboutImg from '../../assets/img/aboutimg.png'
-import rectangleGross from '../../assets/svg/RectangleGross.svg';
 import dotrec from '../../assets/svg/dotrec.svg'
-import dots from '../../assets/img/dots.png'
 
 const AboutPage = () => {
     const skills = [
@@ -24,20 +23,17 @@ const AboutPage = () => {
     ]
 
     const softSkills = [
-        {id: 1, skills: 'I often bike with my friends'},
-        {id: 2, skills: 'I often bike with my friends'},
-        {id: 3, skills: 'I often bike with my friends'},
-        {id: 4, skills: 'I often bike with my friends'},
-        {id: 5, skills: 'I often bike with my friends'},
-        {id: 6, skills: 'I often bike with my friends'},
-        {id: 7, skills: 'I often bike with my friends'}
+        { id: 1, skills: 'I often bike with my friends' },
+        { id: 2, skills: 'I often bike with my friends' },
+        { id: 3, skills: 'I often bike with my friends' },
+        { id: 4, skills: 'I often bike with my friends' },
+        { id: 5, skills: 'I often bike with my friends' },
+        { id: 6, skills: 'I often bike with my friends' },
+        { id: 7, skills: 'I often bike with my friends' }
     ]
     return (
         <section className='relative overflow-hidden mt-12'>
-            <img src={dots} alt='dots' className='absolute -left-6 top-52 hidden lg:block' />
-            <img src={rectangleGross} alt='rectangle' className='absolute rotate-180 -left-5 bottom-36 hidden lg:block' />
-            <img src={rectangleGross} alt='rectangle' className='absolute right-0 top-28 hidden lg:block' />
-            <img src={dots} alt='dots' className='absolute -right-5 bottom-96 hidden lg:block' />
+            <SideSvg />
             <div className='container'>
                 <HeadPage pageName='about-me' descPage='Who am i?' />
                 <div className='mb-12 mt-16'>
