@@ -20,16 +20,12 @@ const About = () => {
                 </div>
                 <div className='flex flex-wrap items-center'>
                     <div className='w-full md:w-3/5'>
-                        <p>Hello, i’m Elias!</p>
+                        <p>Hello, i’m Amirhossein</p>
                         <p className='py-10'>
-                            I’m a self-taught front-end developer based in Kyiv, Ukraine.
-                            I can develop responsive websites from scratch and raise them
-                            into modern user-friendly web experiences.
+                            Front-End Developer, creative and enthusiastic, seeking new opportunities in the world of web development. I specialize in user interface development and create optimized and visually appealing user experiences using HTML5, CSS3, JavaScript, and React.
                         </p>
                         <p className='mb-9'>
-                            Transforming my creativity and knowledge into a websites has been my passion for over a year.
-                            I have been helping various clients to establish their presence online.
-                            I always strive to learn about the newest technologies and frameworks.
+                            My skills include responsive design and building both single-page and multi-page websites. With a passion for continuous learning, I constantly update myself with the latest technologies and development methodologies. I am interested in collaborating with teams or working as a freelancer. Feel free to contact me for further information.
                         </p>
                         <Button name='Read more ->' />
                     </div>

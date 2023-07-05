@@ -12,7 +12,7 @@ const Footer = () => {
                 <div className='flex justify-between flex-wrap mt-8'>
                     <div className='mt-3 sm:mt-0'>
                         <p className='flex items-center'>
-                            <img src={email} alt='email' className='mr-1' />
+                            <img src={email} alt='email' className='mr-1 transform hover:rotate-45 transition-all duration-500' />
                             amirhosseinhphpam@gmail.com
                         </p>
                         <p className='text-white'>Front-end Developer</p>

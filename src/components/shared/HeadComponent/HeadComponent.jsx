@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const HeadComponent = ({ nameComponent, hidden, lineHidden }) => {
     return (
@@ -8,7 +9,9 @@ const HeadComponent = ({ nameComponent, hidden, lineHidden }) => {
                 <div className={`h-px ml-4 hidden sm:block bg-primary ${lineHidden}`}></div>
                 {/* width = w-36 lg:w-96 ghabel taghir ast */}
             </div>
-            <p className={hidden}>View all ~~</p>
+            <p className={hidden}>
+                <Link to='/projects'>View all ~~</Link>
+            </p>
         </div>
     );
 };

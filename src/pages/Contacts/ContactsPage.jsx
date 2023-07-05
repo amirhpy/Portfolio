@@ -26,11 +26,11 @@ const ContactsPage = () => {
                                 <p className='font-fira-600 text-white'>Message me here</p>
                                 <div className='mt-4'>
                                     <p className='flex items-center'>
-                                        <img src={telegram} alt='telegram' className='mr-1' />
+                                        <img src={telegram} alt='telegram' className='mr-1 transform hover:rotate-45 transition-all duration-500' />
                                         09362931516
                                     </p>
                                     <p className='flex items-center mt-2'>
-                                        <img src={discord} alt='discord' className='mr-1' />
+                                        <img src={discord} alt='discord' className='mr-1 transform hover:rotate-45 transition-all duration-500' />
                                         amir_hpy#3097
                                     </p>
                                 </div>

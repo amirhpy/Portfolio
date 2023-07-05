@@ -8,19 +8,11 @@ const projects = [
 ]
 
 const skills = [
-    { id: 1, headSkill: 'Databases', bodySkill: 'SQLite PostgreSQL Mongo' },
-    { id: 2, headSkill: 'Languages', bodySkill: 'TypeScript lua Python Javascript' },
-    { id: 3, headSkill: 'Tools', bodySkill: 'VSCode Neovim Linux Git Front Awesome Gitlab Photoshop' },
-    { id: 4, headSkill: 'Other', bodySkill: 'HTML CSS EJS SCSS Rest Jinja' },
-    { id: 5, headSkill: 'Frameworks', bodySkill: 'React Vue Disnake Discord Flast Express' }
-]
-
-const pageAboutSkills = [
-    { id: 1, headSkill: 'Databases', bodySkill: 'SQLite PostgreSQL Mongo' },
-    { id: 2, headSkill: 'Languages', bodySkill: 'TypeScript lua Python Javascript' },
-    { id: 3, headSkill: 'Tools', bodySkill: 'VSCode Neovim Linux Git Front Awesome Gitlab Photoshop' },
-    { id: 4, headSkill: 'Other', bodySkill: 'HTML CSS EJS SCSS Rest Jinja' },
-    { id: 5, headSkill: 'Frameworks', bodySkill: 'React Vue Disnake Discord Flast Express' }
+    { id: 1, headSkill: 'Languages', bodySkill: 'Germany A1' },
+    { id: 2, headSkill: 'Languages', bodySkill: 'TypeScript JavaScript' },
+    { id: 3, headSkill: 'Tools', bodySkill: 'VSCode Git Github Photoshop' },
+    { id: 5, headSkill: 'Frameworks', bodySkill: 'ReactJS' },
+    { id: 4, headSkill: 'Other', bodySkill: 'HTML CSS RestAPI MaterialUI Redux TailwindCss React-Bootstrap' },
 ]
 
 const pageAboutSoftSkills = [
@@ -50,4 +42,4 @@ const PageProjectSkills = [
     { id: 5, headSkill: 'Frameworks', bodySkill: 'React Vue Disnake Discord Flast Express' }
 ]
 
-export { projects, skills, pageAboutSkills, pageAboutSoftSkills, pageProjects, PageProjectSkills }
+export { projects, skills, pageAboutSoftSkills, pageProjects, PageProjectSkills }
