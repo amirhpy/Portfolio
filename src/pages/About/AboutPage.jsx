@@ -13,24 +13,10 @@ import SideSvg from '../../components/shared/SideSvg/SideSvg';
 import aboutImg from '../../assets/img/aboutimg.png'
 import dotrec from '../../assets/svg/dotrec.svg'
 
-const AboutPage = () => {
-    const skills = [
-        { id: 1, headSkill: 'Databases', bodySkill: 'SQLite PostgreSQL Mongo' },
-        { id: 2, headSkill: 'Languages', bodySkill: 'TypeScript lua Python Javascript' },
-        { id: 3, headSkill: 'Tools', bodySkill: 'VSCode Neovim Linux Git Front Awesome Gitlab Photoshop' },
-        { id: 4, headSkill: 'Other', bodySkill: 'HTML CSS EJS SCSS Rest Jinja' },
-        { id: 5, headSkill: 'Frameworks', bodySkill: 'React Vue Disnake Discord Flast Express' }
-    ]
+// database
+import {pageAboutSkills, pageAboutSoftSkills} from '../../database/database'
 
-    const softSkills = [
-        { id: 1, skills: 'I often bike with my friends' },
-        { id: 2, skills: 'I often bike with my friends' },
-        { id: 3, skills: 'I often bike with my friends' },
-        { id: 4, skills: 'I often bike with my friends' },
-        { id: 5, skills: 'I often bike with my friends' },
-        { id: 6, skills: 'I often bike with my friends' },
-        { id: 7, skills: 'I often bike with my friends' }
-    ]
+const AboutPage = () => {
     return (
         <section className='relative overflow-hidden mt-12'>
             <SideSvg />
@@ -59,7 +45,7 @@ const AboutPage = () => {
                 <div className='mt-28'>
                     <HeadComponent nameComponent='skills' lineHidden='hidden' hidden='hidden' />
                     <div className='w-full flex flex-wrap justify-between items-start mt-12 gap-y-2 sm:gap-4'>
-                        {skills.map(skill => (
+                        {pageAboutSkills.map(skill => (
                             <MainSkill key={skill.id} {...skill} />
                         ))}
                     </div>
@@ -67,7 +53,7 @@ const AboutPage = () => {
                         <HeadComponent nameComponent='soft-skills' lineHidden='hidden' hidden='hidden' />
                         <div className='flex flex-wrap justify-center lg:justify-between items-start mt-7'>
                             <div className='lg:flex-1 flex flex-wrap gap-4'>
-                                {softSkills.map(skills => (
+                                {pageAboutSoftSkills.map(skills => (
                                     <SoftSkill key={skills.id} {...skills} />
                                 ))}
                             </div>

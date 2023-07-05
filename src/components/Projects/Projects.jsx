@@ -5,17 +5,13 @@ import HeadComponent from '../shared/HeadComponent/HeadComponent';
 import MainProject from './MainProject';
 
 // img
-import projectIMG from '../../assets/img/projectimg.jpg'
 import rectangleGross from '../../assets/svg/RectangleGross.svg';
 import dots from '../../assets/img/dots.png'
 
-const Projects = () => {
-    const projects = [
-        { id: 1, img: projectIMG, using: 'HTML CSS Javasctipt', nameProject: 'Form', desc: 'Form' },
-        { id: 2, img: projectIMG, using: 'HTML', nameProject: 'We', desc: 'Form' },
-        { id: 3, img: projectIMG, using: 'HTML Javasctipt', nameProject: 'Form', desc: 'Form' },
-    ]
+// database
+import { projects } from '../../database/database';
 
+const Projects = () => {
     return (
         <section className='relative mt-28'>
             <img src={dots} alt='dots' className='absolute -left-12 top-16 hidden lg:block' />
