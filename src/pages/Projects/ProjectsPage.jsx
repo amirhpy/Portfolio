@@ -21,7 +21,7 @@ const ProjectsPage = () => {
                 <div className='mb-12 mt-16'>
                     <HeadComponent nameComponent='complete-apps' lineHidden='hidden' hidden='hidden' />
                 </div>
-                <div className='flex flex-wrap gap-4 justify-evenly xl:justify-evenly'>
+                <div className='flex flex-wrap gap-x-4 gap-y-8 justify-evenly xl:justify-evenly'>
                     {projects.map(project => (
                         <MainProject key={project.id} {...project} />
                     ))}

@@ -14,7 +14,7 @@ const Header = () => {
                     <div className='text-start'>
                         <h1 className='font-fira-600 text-3xl text-white'>amirhossein is a <span className='text-primary'>front-end developer</span></h1>
                         <p className='leading-6 mt-8 mb-6'>He crafts responsive websites where technologies <br /> meet creativity</p>
-                        <div className='hidden md:flex'><Button name='Resume me!!' /></div>
+                        <div className='hidden md:flex'><Button name='Resume me!!' target='_self' toLink='' /></div>
                     </div>
                 </div>
                 <div className='w-full md:w-1/2 flex flex-col items-center md:items-end'>

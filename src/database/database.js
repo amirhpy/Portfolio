@@ -6,11 +6,11 @@ import dashboard from '../assets/img/project/dashboard.png'
 
 
 const projects = [
-    { id: 1, img: dashboard, using: 'Javascript React HTML5 CSS3 MaterialUI ChartJS', nameProject: 'Dashboard Admin', desc: 'Admin Dashboard for Product and User Management' },
-    { id: 2, img: restaurant, using: 'Javascript React HTML5 TailwindCss ReactScroll', nameProject: 'Restaurant', desc: 'Café Restaurant - Reservation and Menu Display Functionality' },
-    { id: 3, img: smartshop, using: 'Javascript React HTML5 CSS3 Context SwiperJS', nameProject: 'Smart Shop', desc: 'Smartwatch Store - Product Addition and Deletion Capabilities' },
-    { id: 4, img: portfolio, using: 'Javascript ReactJS HTML5 ReactRouterDom TailwindCss', nameProject: 'Portfolio', desc: 'Personal Website for Contacting Me and Showcasing Projects and Skills' },
-    { id: 5, img: form, using: 'Javascript ReactJS HTML5 Axios Formik Yup ReactRouterDom', nameProject: 'Form', desc: 'Validated Form for User Registration, Account Deletion, and User Profile Update' },
+    { id: 1, img: dashboard, using: 'Javascript React HTML5 CSS3 MaterialUI ChartJS', nameProject: 'Dashboard Admin', desc: 'Admin Dashboard for Product and User Management', toLink: 'https://dashboard-admin-xi.vercel.app/' },
+    { id: 2, img: restaurant, using: 'Javascript React HTML5 TailwindCss ReactScroll', nameProject: 'Restaurant', desc: 'Café Restaurant - Reservation and Menu Display Functionality', toLink: 'https://restaurant-landing-bice.vercel.app/' },
+    { id: 3, img: smartshop, using: 'Javascript React HTML5 CSS3 Context SwiperJS', nameProject: 'Smart Shop', desc: 'Smartwatch Store - Product Addition and Deletion Capabilities', toLink: 'https://smart-shop-gamma.vercel.app/' },
+    { id: 4, img: portfolio, using: 'Javascript ReactJS HTML5 ReactRouterDom TailwindCss', nameProject: 'Portfolio', desc: 'Personal Website for Contacting Me and Showcasing Projects and Skills', toLink: 'https://portfolio-gilt-five-39.vercel.app/' },
+    { id: 5, img: form, using: 'Javascript ReactJS HTML5 Axios Formik Yup ReactRouterDom', nameProject: 'Form', desc: 'Validated Form for User Registration, Account Deletion, and User Profile Update', toLink: 'https://form-three-xi.vercel.app/' },
 ]
 
 const skills = [
@@ -34,11 +34,7 @@ const pageAboutSoftSkills = [
 ]
 
 const PageProjectSkills = [
-    { id: 1, headSkill: 'Databases', bodySkill: 'SQLite PostgreSQL Mongo' },
-    { id: 2, headSkill: 'Languages', bodySkill: 'TypeScript lua Python Javascript' },
-    { id: 3, headSkill: 'Tools', bodySkill: 'VSCode Neovim Linux Git Front Awesome Gitlab Photoshop' },
-    { id: 4, headSkill: 'Other', bodySkill: 'HTML CSS EJS SCSS Rest Jinja' },
-    { id: 5, headSkill: 'Frameworks', bodySkill: 'React Vue Disnake Discord Flast Express' }
+    { id: 1, nameProject: 'Personal Site Darkmod', headSkill: 'Front-end', bodySkill: 'Javascript ReactJS HTML5 CSS3 SwiperJS', toLink: 'https://personal-website-seven-sepia.vercel.app/' }
 ]
 
 export { projects, skills, pageAboutSoftSkills, PageProjectSkills }

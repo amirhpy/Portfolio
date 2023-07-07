@@ -3,7 +3,7 @@ import React from 'react';
 // shared
 import Button from '../shared/Button/Button';
 
-const MainProject = ({ img, using, nameProject, desc }) => {
+const MainProject = ({ img, using, nameProject, desc, toLink }) => {
     return (
         <div className='flex flex-col w-full md:w-80 border border-gray'>
             <div>
@@ -15,7 +15,7 @@ const MainProject = ({ img, using, nameProject, desc }) => {
             <div className='p-4'>
                 <h4 className='font-fira-500 text-2xl text-white'>{nameProject}</h4>
                 <p className='py-4 text-sm'>{desc}</p>
-                <Button name='Live <~>' />
+                <Button name='Live <~>' target='_blank' toLink={toLink} />
             </div>
         </div>
     );

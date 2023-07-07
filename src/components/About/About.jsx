@@ -27,7 +27,7 @@ const About = () => {
                         <p className='mb-9'>
                             My skills include responsive design and building both single-page and multi-page websites. With a passion for continuous learning, I constantly update myself with the latest technologies and development methodologies. I am interested in collaborating with teams or working as a freelancer. Feel free to contact me for further information.
                         </p>
-                        <Button name='Read more ->' />
+                        <Button name='Read more ->' target='_self' toLink='/about' />
                     </div>
                     <div className='w-full md:w-2/5 flex justify-center md:justify-end'>
                         <img src={aboutImg} alt='img' className='' />
