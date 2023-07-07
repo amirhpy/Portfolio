@@ -10,7 +10,7 @@ import HeadComponent from '../../components/shared/HeadComponent/HeadComponent';
 import SideSvg from '../../components/shared/SideSvg/SideSvg';
 
 // database
-import { pageProjects, PageProjectSkills } from '../../database/database'
+import { projects, PageProjectSkills } from '../../database/database'
 
 const ProjectsPage = () => {
     return (
@@ -21,8 +21,8 @@ const ProjectsPage = () => {
                 <div className='mb-12 mt-16'>
                     <HeadComponent nameComponent='complete-apps' lineHidden='hidden' hidden='hidden' />
                 </div>
-                <div className='flex flex-wrap gap-4 justify-evenly xl:justify-between'>
-                    {pageProjects.map(project => (
+                <div className='flex flex-wrap gap-4 justify-evenly xl:justify-evenly'>
+                    {projects.map(project => (
                         <MainProject key={project.id} {...project} />
                     ))}
                 </div>

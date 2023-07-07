@@ -12,6 +12,7 @@ import dots from '../../assets/img/dots.png'
 import { projects } from '../../database/database';
 
 const Projects = () => {
+    const filterdProject = projects.slice(0, 3)
     return (
         <section className='relative mt-28'>
             <img src={dots} alt='dots' className='absolute -left-12 top-16 hidden lg:block' />
@@ -21,7 +22,7 @@ const Projects = () => {
                     <HeadComponent nameComponent='project' lineHidden='w-36 lg:w-96' />
                 </div>
                 <div className='flex flex-wrap justify-evenly xl:justify-between gap-4'>
-                    {projects.map(project => (
+                    {filterdProject.map(project => (
                         <MainProject key={project.id} {...project} />
                     ))}
                 </div>
