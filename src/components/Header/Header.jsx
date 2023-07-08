@@ -3,8 +3,8 @@ import React from 'react';
 // img
 import header from '../../assets/img/header.png'
 
-// shared
-import Button from '../shared/Button/Button';
+// resume
+import resume from '../../assets/pdf/resume.pdf'
 
 const Header = () => {
     return (
@@ -14,7 +14,11 @@ const Header = () => {
                     <div className='text-start'>
                         <h1 className='font-fira-600 text-3xl text-white'>amirhossein is a <span className='text-primary'>front-end developer</span></h1>
                         <p className='leading-6 mt-8 mb-6'>He crafts responsive websites where technologies <br /> meet creativity</p>
-                        <div className='hidden md:flex'><Button name='Resume me!!' target='_self' toLink='' /></div>
+                        <div className='hidden md:flex'>
+                            <a href={resume} download className='font-fira-500 text-white border-primary border inline-block px-4 py-2 transition-all ease-in-out duration-500 hover:bg-primary hover:bg-opacity-20'>
+                                Resume Me!!
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div className='w-full md:w-1/2 flex flex-col items-center md:items-end'>
