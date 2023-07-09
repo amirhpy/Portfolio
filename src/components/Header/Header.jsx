@@ -14,7 +14,7 @@ const Header = () => {
                     <div className='text-start'>
                         <h1 className='font-fira-600 text-3xl text-white'>amirhossein is a <span className='text-primary'>front-end developer</span></h1>
                         <p className='leading-6 mt-8 mb-6'>He crafts responsive websites where technologies <br /> meet creativity</p>
-                        <div className='hidden md:flex'>
+                        <div>
                             <a href={resume} download className='font-fira-500 text-white border-primary border inline-block px-4 py-2 transition-all ease-in-out duration-500 hover:bg-primary hover:bg-opacity-20'>
                                 Resume Me!!
                             </a>

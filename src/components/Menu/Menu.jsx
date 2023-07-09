@@ -21,8 +21,8 @@ const Menu = () => {
             <Social />
             <nav className='sticky top-0 z-10 bg-background'>
                 <div className='container flex py-8 items-center justify-between'>
-                    <NavLink to='/'>
-                        <div className='flex font-fira-700 items-center z-10 text-white'>
+                    <NavLink to='/' className='z-10'>
+                        <div className='flex font-fira-700 items-center text-white'>
                             <img className='mr-3 transform hover:rotate-45 transition-all duration-500' src={logo} alt='logo' />
                             Amirhossein
                         </div>
@@ -47,15 +47,11 @@ const Menu = () => {
                             </li>
                         </NavLink>
                         <NavLink onClick={menuHandler} to='/contacts' className={(link) => link.isActive ? 'text-white font-fira-500' : ''}>
-                            <li className='mr-8 mt-4 md:mt-0 hover:text-white transition-all'>
+                            <li className='mt-4 md:mt-0 hover:text-white transition-all'>
                                 <span className='text-primary'>#</span>
                                 contacts
                             </li>
                         </NavLink>
-                        <li className='mt-4 md:mt-0 hover:text-white transition-all'>
-                            <span className='text-primary'>#</span>
-                            EN
-                        </li>
                         <div className='self-center absolute bottom-10 md:hidden'>
                             <MainSocial rowCol='flex-row' spaceBettwen='mx-2' />
                         </div>
